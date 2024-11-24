@@ -20,6 +20,11 @@ let heros = [{
 }]
 
 
+
+app.get("/", (req, res) => {
+  res.send("Bem-vindo à API!");
+});
+
 app.route('/api').get((req, res) => res.json({
   heros
 }))
